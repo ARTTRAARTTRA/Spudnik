@@ -11,36 +11,38 @@
             box-sizing: border-box;
         }
         body {
-            background: url('lang.jpg') no-repeat center center fixed;
-            background-size: cover;
+            margin: 0;
+            padding: 0;
+            background: url('lang.jpg') no-repeat center top; /* Bild oben zentrieren */
+            background-size: 100% auto; /* Breite auf 100%, Höhe automatisch */
             min-height: 100vh; /* Mindesthöhe auf Viewport-Höhe setzen */
+            font-family: Arial, sans-serif;
+        }
+        .content {
+            height: 2216px; /* Höhe des Bildes (2216px) */
             display: flex;
             justify-content: center;
             align-items: flex-start; /* Text oben zentrieren */
             text-align: center;
-            font-family: Arial, sans-serif;
-            flex-direction: column; /* Inhalt vertikal ausrichten */
+            padding-top: 20px; /* Abstand nach oben */
         }
         h1 {
             color: white;
             font-size: 3em;
             font-weight: bold;
-            margin-top: 20px; /* Abstand nach oben */
         }
-        .content {
-            height: 2216px; /* Höhe des Bildes (2216px) */
-            width: 100%;
-            display: flex;
-            justify-content: flex-start; /* Inhalt oben beginnen lassen */
-            align-items: center;
-            flex-direction: column;
+        p {
+            color: white;
+            font-size: 1.5em;
         }
     </style>
 </head>
 <body>
     <div class="content">
-        <h1>SPUDNIK - Der Couch Potato</h1>
-        <p style="color: white;">Willkommen auf der offiziellen Seite von SPUDNIK!</p>
+        <div>
+            <h1>SPUDNIK - Der Couch Potato</h1>
+            <p>Willkommen auf der offiziellen Seite von SPUDNIK!</p>
+        </div>
     </div>
 </body>
 </html>
